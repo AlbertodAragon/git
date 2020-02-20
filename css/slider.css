@@ -1,0 +1,43 @@
+/* Slides/Filters */
+
+
+.prev, .next, .prev2, .next2
+{		
+	position:absolute;
+	display:block;	
+	z-index:20;
+	cursor:pointer;
+}
+
+.prev, .next
+{			
+	width:15px;
+	height:24px;
+	top:calc(55% - 24px);
+}
+
+#slidebuttons .prev, #slidebuttons .next, .owl-nav div
+{			
+	width:14px;
+	height:38px;	
+}
+
+.prev
+{
+	background:url(/gfx/prevblack.png) no-repeat;
+}
+
+.next
+{
+	background:url(/gfx/nextblack.png) no-repeat;
+}
+
+#prev1, #prev2
+{		
+	left:-5px;
+}
+
+#next1, #next2
+{		
+	right:-5px;
+}

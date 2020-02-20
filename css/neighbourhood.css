@@ -1,0 +1,693 @@
+body
+{
+    margin:0px;
+}
+
+.imgholding img, .secondpart img, #teamlist img
+{
+    height:100%;
+    width:100%;
+}
+
+.testimonialoverimage
+{
+	display:none;
+}
+
+
+
+#mapinformation img
+{
+	margin-top:-41px;
+	
+}
+
+#secondinformation img
+{
+	margin-top:-21px;
+}
+
+
+.test2
+{
+	margin-bottom:0px !important;
+}
+
+ .imgholding {
+       /*display:none;*/
+    }
+
+    .fadeIn {
+        -webkit-animation: animat_show 0.8s;
+        animation: animat_show 0.8s;
+        visibility: visible !important;
+    }
+
+    @-webkit-keyframes animat_show{
+        0%{opacity:0}
+        100%{opacity:1}
+    }
+
+.container-fluid
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*.imgholding1
+{
+    background-image:url(/gfx/neighbourhoodmapholding.jpg);
+       min-height: 900px; 
+     background-attachment: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+/*.imgholding2
+{
+    background-image:url(/gfx/crossrail2.jpg);
+      min-height: 900px; 
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    */
+/*.imgholding3
+{
+    
+    background-image:url(/gfx/tube.jpg);
+      min-height: 900px; 
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}*/
+
+/*.imgholding4
+{
+     background-image:url(/gfx/walking.jpg);
+       min-height: 900px; 
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.9s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+ .transition-slideup
+  {
+      text-transform: uppercase;
+    color: rgba(195, 176, 133, 1.0);
+    font-size: 23px;
+    font-family: CeraProLight;
+    width:100%;
+    margin-bottom:100px;
+    margin-top:0px !important;
+    padding-top:0px !important;
+  }
+ .underline
+ {
+     margin-bottom:0px !important;
+ }
+.centre 
+{
+    text-align: center;
+}
+
+.test2 img
+{
+    width:100%;
+    height:auto !important;
+}
+
+.underline:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: rgba(195, 176, 133, 1.0);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 30px auto 30px auto;
+}
+
+.underline:after {
+    height: 2px;
+}
+
+
+#neighdescription .row > h1
+{
+    text-transform: uppercase;
+    color:rgba(195, 176, 133, 1.0);
+    font-size: 23px;
+    text-align:center;
+    width:100%;
+    font-family: CeraProMedium;
+
+}
+#neighdescription .row > p
+{
+     color: rgba(142, 126, 84, 1.0);
+    margin: 20px auto 0px auto;
+    text-align: center;
+    width: 500px;
+
+   
+    font-family: CeraProLight;
+   
+   
+    font-size: 20.0px;
+    line-height: 1.4;
+}
+
+#neighdescription
+{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+#slideshowbox
+{
+    max-height: 100% !important;
+    }
+
+
+#slideshowbox:first-child
+{
+    /*max-height: 700px !important;*/
+    }
+
+#slideshow li img:first-child
+{
+    
+}
+
+#slideshow li img
+{
+    margin-top: 0px;
+}
+
+.neighitem .col .row > h1
+{
+    text-transform: uppercase;
+    color: rgba(195, 176, 133, 1.0);
+      line-height: 1.2;
+    font-size: 24px;
+    text-align:center;
+    width:100%;
+    padding:100px 0px 0px 0px;
+    font-family: CeraProMedium;
+}
+
+.secondpart
+{
+    margin-top:150px;
+    
+}
+
+.secondpart .col:first-child
+{
+    max-width:40%;
+    padding:0px;
+}
+
+.secondpart .col:first-child img
+{
+    width:100%;
+    height:auto;
+}
+
+.secondpart .col:nth-child(2)
+{
+    max-width:60%;
+    padding:20px 5% 0px 5% !important;
+}
+
+.secondpart .col:first-child img
+{
+    width:100%;
+    height:auto;
+}
+
+.pg0 #body .col, .pg0 #body .row, .pg0 #body.row
+{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+        padding-right: 0px;
+    padding-left: 0px ;
+}
+
+.quotetext
+{
+        
+    color: rgba(195, 176, 133, 1.0);
+    font-size: 34px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-family: CeraProLight;
+	width:70%;
+}
+.fas
+{
+    
+    font-size:18px !important;
+}
+.detailtext
+{
+    margin-top:100px;
+}
+
+.detailtext p
+{
+    width: 70%;
+    color: rgba(195, 176, 133, 1.0);
+    margin-top: 10px;
+      font-family: CeraProLight;
+      font-size:15px;
+	  letter-spacing:0.5px;
+}
+
+#teamlist
+{
+    margin-bottom:80px;
+}
+img
+{
+    /*width:100%;
+    height:100%;*/
+}
+
+
+
+/**** interactive map    *****/
+
+#interactivemapmap
+{
+	width:100%;
+}
+#interactivemapmap > img
+{
+	width:100%;
+	height:auto;
+	display:none;
+}
+
+#interactivemapmap > img.selected
+{
+	display:block;
+}
+
+
+
+#mapmenu
+{
+	width:100%;
+	background-color:#ac966d;
+	height:50px;
+}
+
+#mapmenu ul, #mapmenu ol
+{
+	text-align:center;
+	display:table;
+	margin:2px auto;
+}
+
+#mapmenu ul li, #mapmenu ol li
+{
+	padding:10px 0px;
+	text-transform:uppercase;
+	font-size:17px;	
+	display:table;
+	float:left;
+}
+
+
+#mapmenu a
+{
+	text-decoration:none;
+	display:table;
+	float:left;
+}
+
+.fa-square
+{
+	margin-bottom:5px;
+	margin-left:10px;
+	transform: rotate(45deg);
+	color:rgba(255,255,255,0.7);
+	font-size:0.55em;
+	float:right;
+	margin:9px 10px 0px 10px;
+}
+
+#mapmenu a span
+{
+	float:left;
+	color:rgba(255,255,255,0.7);
+}
+
+
+#mapmenu li.activemap a span
+{
+	color:rgba(255,255,255,1);
+}
+
+#maplistitems
+{
+	display:block;
+	width:100%;
+}
+
+#maplistitems > ul, #maplistitems > ol
+{
+	display:none;
+	width:96%;
+	max-width:1200px;
+	margin:20px auto;
+	height:auto;
+	list-style:decimal !important;
+}
+
+#maplistitems > ul.selected, #maplistitems > ol.selected
+{
+	display:table;
+}
+
+#maplistitems ul li, #maplistitems ol li
+{
+	width:17%;
+	float:left;
+	margin-right:3%;
+	margin-bottom:15px;
+	font-size:1.4em;
+	color:#3e5171;
+	line-height:1.2em;
+	height:45px;
+}
+
+#maplistitems ul li.mapicon, #maplistitems ol li.mapicon
+{
+	height:auto;
+	list-style-type:none !important;
+}
+
+#maplistitems ul li.mapicon img, #maplistitems ol li.mapicon img
+{
+	width:80%;
+	height:auto;
+	margin:10%;
+}
+
+/*#body > div.col:first-child > div.col:nth-child(7) */
+
+#teamlist > div.row
+{
+	display:block;
+	width:100%;
+}
+
+.desktopmap
+{ 
+	display:block;
+}
+	
+.mobilepmap
+{
+	display:none;
+}
+
+
+@media screen and (max-width:1400px)
+{
+    .imgholding2
+{
+    /*background-image:url(/gfx/crossrail2.jpg);
+      min-height: 900px; 
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+
+}
+
+@media screen and (max-width:1200px)
+{
+
+       /* .imgholding4
+{
+    background-image:url(/gfx/crossrail2.jpg);
+      min-height: 900px; 
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/
+
+#slideshowbox
+{
+    margin-bottom:0px !important;
+}
+
+/*.secondpart .col:first-child
+{
+    min-width:100%;
+}
+.secondpart .col:first-child img
+{
+    height:100%;
+}
+    */
+
+.secondpart .col:nth-child(2)
+{
+        max-width: 100%;
+    padding: 20px 35px 0px 35px;
+}
+
+.detailtext p
+{
+    width:90%;
+	margin-left:5%;
+	text-align:justify;
+}
+
+.neighitem .col .row > h1
+{
+    padding: 30px 0px 40px 0px;
+}
+.neighitem
+{
+    margin-top:30px;
+}
+}
+
+
+
+
+
+@media screen and (max-width:800px)
+{
+    #neighdescription
+    {
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+
+    .secondpart .col:first-child
+{
+    min-width:100%;
+}
+.secondpart .col:first-child img
+{
+    height:100%;
+}
+
+}
+  
+
+/***** interactive map medias ****/
+
+@media screen and (max-width:1070px) 
+{
+	#mapmenu ul li, #mapmenu ol li
+	{
+		padding:0px;
+	}
+
+	#mapmenu ul, #mapmenu ol
+	{
+		padding:10px 15px;
+	}
+
+	#mapmenu
+	{
+		height:74px;
+	}
+	
+	#maplistitems ul li, #maplistitems ol li
+	{		
+		width:20.5%;
+	}
+
+	#maplistitems ul li.mapicon, #maplistitems ol li.mapicon
+	{
+		width:8%;
+		margin-bottom:50px;
+	}
+}
+
+@media screen and (max-width:950px) 
+{
+	#maplistitems ul li.mapicon, #maplistitems ol li.mapicon
+	{
+		margin-bottom:160px;
+	}
+
+	#maplistitems ul li, #maplistitems ol li
+	{		
+		width:28%;
+	}
+}
+@media screen and (max-width:770px) 
+{
+	.neighitem .col .row > h1 
+	{
+		padding: 30px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width:729px)
+{
+	.transition-slideup.underline
+	{
+	    margin-top: -8px !important;
+    }
+
+	.desktopmap
+	{ 
+		display:none;
+	}
+	
+	.mobilepmap
+	{
+		display:block;
+	}
+}	
+
+
+@media screen and (max-width:570px) 
+{
+
+	.quotetext
+	{
+		font-size: 24px;
+	}
+	#mapmenu
+	{
+		height:101px;
+	}
+
+	#maplistitems ul li, #maplistitems ol li
+	{		
+		width:43%;
+	}
+
+	#maplistitems ul li.mapicon, #maplistitems ol li.mapicon
+	{
+		margin-bottom:300px;
+	}
+	#neighdescription .row > p
+	{
+		width: 260px;
+	}
+	.detailtext
+	{
+		margin-top:30px;
+	}
+	.secondpart .col:nth-child(2)
+	{
+		padding: 20px 2% 0px 3%;
+	}
+}
+
+@media screen and (max-width:500px) 
+{
+	#maplistitems ul li, #maplistitems ol li
+	{
+		height:60px;
+	}
+
+
+	.quotetext
+	{
+		display:none;
+	}
+		.testimonialoverimage
+{
+	display:block;
+	margin-bottom:40px;
+	width:100%;
+	text-align:center;
+	margin:40px auto;
+	padding:0px 0px !important;
+}
+
+		.secondpart
+		{
+			margin-top:0px;
+		}
+}
+
+@media screen and (max-width:420px) 
+{
+	#mapmenu
+	{
+		height:125px;
+	}
+}
+
+@media screen and (max-width:380px) 
+{
+	#mapmenu
+	{
+		height:145px;
+	}
+
+	#maplistitems ul li, #maplistitems ol li
+	{		
+		width:96%;
+		margin-left:2%
+	}
+
+	#maplistitems ul li.mapicon, #maplistitems ol li.mapicon
+	{
+		margin-bottom:0px;
+		width:100%;
+	}
+
+	#maplistitems ul li.mapicon img, #maplistitems ol li.mapicon img
+	{
+		width:20%;
+		margin-left:40%;
+	}
+}

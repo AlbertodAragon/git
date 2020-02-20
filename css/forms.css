@@ -1,0 +1,167 @@
+﻿fieldset
+{
+	width:40%;
+	padding:5%;
+	margin-top:20px;
+}
+
+legend
+{
+	padding:0 5px;
+	font-weight:bold;
+}
+
+.fieldbox
+{		
+	display:table;
+	width:40%;	
+	line-height:1em;
+}
+
+fieldset .fieldbox
+{
+	width:100%;	
+}
+
+.fieldbox.contact
+{
+	width:50%;	
+}
+
+.fieldbox li
+{
+	display:table;	
+	clear:both;
+	width:100%;	
+	padding:5px 0;
+	text-align:left;	
+}
+
+.fieldbox label
+{
+	display:block;
+	float:left;	
+	width:150px;
+	line-height:18px;
+	margin-right:5px;	
+	font-weight:bold;
+}
+
+.fieldbox input.subtext, .fieldbox select, .fieldbox textarea
+{
+	display:block;
+	float:left;		
+}
+
+.fieldbox input.subtext, .fieldbox select, .fieldbox textarea, .fieldbox input.txtbox
+{
+	width:92%;
+	padding:9px 4%;	
+	color:#333;	
+	font-family:HelveticaNeue;
+}
+
+.fieldbox input.radiobtn
+{
+	margin:0 15px 0 100px;	
+}
+
+.fieldbox select
+{	
+	color:#333;
+}
+
+.fieldbox span
+{
+	display:block;
+	float:left;
+	margin-left:5px;	
+}
+
+.checkbox input
+{
+	height:auto;
+}
+
+.red
+{	
+	color:#cf1212;
+}
+
+.fieldbox .buttonbar
+{
+	width:215px;
+	padding:10px 0 0 155px;
+}
+
+
+.buttonbar, .buttonbar2
+{
+	padding-top:15px;
+}
+
+.buttonbar2
+{	
+	padding-top:15px !important;
+}
+
+.buttonbar2 img
+{	
+	float:left;
+	margin-right:15px;
+}
+
+.larger
+{
+	font-size:1.2em;
+}
+
+#usstate, usstate2
+{
+	display:none;
+}
+
+#ctl00_textPL_btnSaveBillingInfo
+{
+	margin-left:400px;
+}
+
+/***careers***/
+
+#contentcareer 
+{
+    color: #000000;
+    min-height: 305px;
+    padding: 20px 0;
+}
+
+#contentcareer fieldset
+{
+	width:600px;
+	margin:20px auto;
+}
+
+#contentcareer .fieldbox, #contentcareer .fieldbox li
+{
+	width:600px;
+}
+
+#contentcareer .fieldbox li.longleftmargin
+{
+	margin-left:300px;
+}
+
+#contentcareer .fieldbox label
+{
+	width:220px;
+}
+
+#contentcareer .fieldbox input, #contentcareer .fieldbox textarea
+{
+	width:220px;
+}
+
+#contentcareer #ctl00_textPL_btnSaveBillingInfo
+{
+	width:150px;
+}

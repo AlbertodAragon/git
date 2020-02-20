@@ -1,0 +1,21 @@
+﻿#footernavs, #footernav
+{
+    display:none;
+}
+
+#informationfooter .col:first-child
+{
+    text-align:center !important;
+    padding-top:20px !important;
+}
+
+#spacegalleon
+{
+    text-align:center !important;
+    float:left !important;
+}
+
+#footerbar
+{
+    height:85px !important;
+}

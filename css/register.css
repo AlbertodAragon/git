@@ -1,0 +1,9 @@
+﻿#contentbox h2
+{
+    display:none;
+}
+.container-fluid
+{
+        padding-right: 15px;
+     padding-left: 15px;
+}

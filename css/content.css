@@ -1,0 +1,53 @@
+﻿.textcontent
+{
+	    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.textcontent ol
+{
+	/*list-style: inside decimal;*/
+}
+
+.textcontent ul
+{
+	/*list-style: inside disc;*/
+}
+.textcontent ul
+{
+color: grey;
+    
+    text-align: left;
+   
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.textcontent ol
+{
+color: grey;
+    
+    text-align: left;
+    
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.textcontent p
+{
+	    
+		width: 100% !important;
+		margin-bottom: 1rem !important;
+}
+
+
+@media screen and (min-width:730px)
+{
+	#content
+	{	
+		
+	}		
+}
+
+@media screen and (max-width:729px)
+{
+	
+}	

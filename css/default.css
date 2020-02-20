@@ -1,0 +1,117 @@
+/*-----------------------------------------------------------------------------
+Surge Solutions Screen Stylesheet
+
+version:   1.2
+date:      27/05/2018
+author:    Tariq Aziz
+
+/* Remove margin, padding and border from everything
+-----------------------------------------------------------------------------*/
+
+@font-face
+{
+    font-family:HelveticaNeue;
+    src:url("/css/fonts/helveticaneue.ttf");
+}
+
+@font-face
+{
+    font-family:CeraProLight;
+    src:url("/css/fonts/CeraProLight.ttf");
+}
+
+@font-face
+{
+    font-family:CeraProMedium;
+    src:url("/css/fonts/CeraProMedium.ttf");
+}
+
+*
+{
+	 font-family: CeraProLight;
+	font-size:inherit;
+	color:inherit;	
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Styles for layout
+-----------------------------------------------------------------------------*/
+
+.clear
+{
+	clear:both;
+}
+
+
+/* Set up the document
+-----------------------------------------------------------------------------*/
+
+.textcontent p
+{
+    text-align:left;
+}
+
+body
+{
+	font-family:HelveticaNeue;
+	font-size:80%;
+	background:#fff;
+	color:#000;
+	padding:0;	
+}
+
+/* Typography
+-----------------------------------------------------------------------------*/
+
+ul, ol, dl
+{
+	list-style: none;	
+}
+
+#ctl00_textPL_maintext ul
+{
+	list-style:disc;
+	padding-left:15px;
+}
+
+#ctl00_textPL_maintext ol
+{
+	list-style:decimal;
+	padding-left:15px;
+}
+
+td
+{
+	text-align:left;
+	vertical-align:top;
+}
+
+img
+{
+	border:0;
+}
+
+input, select, textarea
+{
+	color:#000;
+}
+
+a 
+{	
+	text-decoration:none;
+}
+
+/* always Show vertical scrollbar
+-----------------------------------------------------------------------------*/
+
+html { height: 100%; margin-bottom: 1px; }
+
+/*.container-fluid
+{
+	padding-left:0px;
+	padding-right:0px;
+}*/

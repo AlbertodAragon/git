@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Standard.master.cs" Inherits="SurgeSolutions.FrontEnd.masterpages.Standard" %>
+<%@ Register src="/UserControls/Header.ascx" tagname="Header" tagprefix="uc1" %>
+<%@ Register src="/UserControls/Footer.ascx" tagname="Footer" tagprefix="uc2" %>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="/gfx/favicon.png" type="image/x-icon" />
+    <title>Lyons Place</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <asp:Literal ID="metadata" runat="server"></asp:Literal>
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css?oc1018">
+    <link rel="stylesheet" type="text/css" href="/css/default.css?oc1018" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css?221119"/>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?oc1018"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js?oc1018"></script>
+    <!--<script src="/scr/jquery-ui.min.js?oc1018" ></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>-->
+    <script src="/scr/jquery-ui-min.js"></script>
+    <script src="/scr/forms.js?oc1018"></script>   
+    <script src="/scr/main.js?oc102018"></script>      
+    <asp:ContentPlaceHolder ID="headPL" runat="server"></asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?oc1018" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/font-awesome.min.css?oc1018">
+    
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+    'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N3N4TFW');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '558043467982542');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=558043467982542&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="pg<%=PageID%>">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3N4TFW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<form id="theForm" runat="server"><asp:HiddenField ID="hndPage" runat="server" /></form>
+
+<section class="container-fluid">	
+	
+	<uc1:Header ID="Header1" runat="server" />
+		
+    <section id="body" class="row">
+        <div class="col">      
+		    <asp:ContentPlaceHolder ID="textPL" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </section>
+    
+    <uc2:Footer ID="Footer1" runat="server" />	   
+    
+    <div id="cookiepolicyagreediv" runat="server">
+        <p>By using this website you agree to our use of cookies. View <a href="javascript:OpenCookie();">Cookies Policy</a></p>
+        <a class="linkcookie" href="javascript:closecookies();">Accept</a>
+    </div> 
+</section>
+
+
+
+<asp:ContentPlaceHolder ID="footerPL" runat="server"></asp:ContentPlaceHolder>
+<!-- #include virtual = "/inc/GoogleAnalytics.inc" --> 
+</body>
+</html>

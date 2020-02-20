@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4FF4B54-1727-4619-BA9B-1E50F44D0606}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SurgeSolutions.FrontEnd</RootNamespace>
+    <AssemblyName>FrontEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Apis, Version=1.36.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.36.0\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.AnalyticsReporting.v4, Version=1.36.0.1376, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.AnalyticsReporting.v4.1.36.0.1376\lib\net45\Google.Apis.AnalyticsReporting.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.36.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.36.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.36.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.36.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.36.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.36.0\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.36.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.36.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlogItem.aspx" />
+    <Content Include="BlogList.aspx" />
+    <Content Include="CScripts\GAnalyticsCSV.aspx" />
+    <Content Include="css\blog.css" />
+    <Content Include="css\contact.css" />
+    <Content Include="css\neighbourhoodnew.css" />
+    <Content Include="css\neighbourhood.css" />
+    <Content Include="css\pagenotfound.css" />
+    <Content Include="css\propertymasterplan.css" />
+    <Content Include="css\register.css" />
+    <Content Include="css\releases.css" />
+    <Content Include="css\property.css" />
+    <Content Include="css\team.css" />
+    <Content Include="Contact.aspx" />
+    <Content Include="NeighbourhoodNew.aspx" />
+    <Content Include="Neighbourhood.aspx" />
+    <Content Include="ProcessForm2.aspx" />
+    <Content Include="scr\contact2.js" />
+    <Content Include="scr\jquery-ui-min.js" />
+    <Content Include="scr\forms.js" />
+    <Content Include="scr\touchpunch.js" />
+    <Content Include="scr\jquery.maphilight.js" />
+    <Content Include="scr\neighnew.js" />
+    <Content Include="scr\neigh.js" />
+    <Content Include="scr\releases.js" />
+    <Content Include="Team.aspx" />
+    <Content Include="Releases.aspx" />
+    <Content Include="PropertyT.aspx" />
+    <Content Include="Content.aspx" />
+    <Content Include="css\default.css" />
+    <Content Include="css\content.css" />
+    <Content Include="css\forms.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\slideshow.css" />
+    <Content Include="ProcessForm.aspx" />
+    <Content Include="scr\blog.js" />
+    <Content Include="scr\property.js" />
+    <Content Include="scr\content.js" />
+    <Content Include="TTest.aspx" />
+    <Content Include="UserControls\BlogCategory.ascx" />
+    <Content Include="UserControls\BlogDetails.ascx" />
+    <Content Include="UserControls\BlogList.ascx" />
+    <Content Include="UserControls\Footer.ascx" />
+    <Content Include="UserControls\Header.ascx" />
+    <Content Include="UserControls\ListBoxDetail.ascx" />
+    <Content Include="UserControls\ListBoxUC.ascx" />
+    <Content Include="UserControls\PropertyFloorplan.ascx" />
+    <Content Include="UserControls\PropertySlides.ascx" />
+    <Content Include="UserControls\SlideshowDB.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlogItem.aspx.cs">
+      <DependentUpon>BlogItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogItem.aspx.designer.cs">
+      <DependentUpon>BlogItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlogList.aspx.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogList.aspx.designer.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CScripts\GAnalyticsCSV.aspx.cs">
+      <DependentUpon>GAnalyticsCSV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CScripts\GAnalyticsCSV.aspx.designer.cs">
+      <DependentUpon>GAnalyticsCSV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterpages\Standard.Master.cs">
+      <DependentUpon>Standard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterpages\Standard.Master.designer.cs">
+      <DependentUpon>Standard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NeighbourhoodNew.aspx.cs">
+      <DependentUpon>NeighbourhoodNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NeighbourhoodNew.aspx.designer.cs">
+      <DependentUpon>NeighbourhoodNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Neighbourhood.aspx.cs">
+      <DependentUpon>Neighbourhood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Neighbourhood.aspx.designer.cs">
+      <DependentUpon>Neighbourhood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessForm2.aspx.cs">
+      <DependentUpon>ProcessForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessForm2.aspx.designer.cs">
+      <DependentUpon>ProcessForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Releases.aspx.cs">
+      <DependentUpon>Releases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Releases.aspx.designer.cs">
+      <DependentUpon>Releases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyT.aspx.cs">
+      <DependentUpon>PropertyT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyT.aspx.designer.cs">
+      <DependentUpon>PropertyT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessForm.aspx.cs">
+      <DependentUpon>ProcessForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessForm.aspx.designer.cs">
+      <DependentUpon>ProcessForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TTest.aspx.cs">
+      <DependentUpon>TTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TTest.aspx.designer.cs">
+      <DependentUpon>TTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BlogCategory.ascx.cs">
+      <DependentUpon>BlogCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BlogCategory.ascx.designer.cs">
+      <DependentUpon>BlogCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BlogDetails.ascx.cs">
+      <DependentUpon>BlogDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BlogDetails.ascx.designer.cs">
+      <DependentUpon>BlogDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BlogList.ascx.cs">
+      <DependentUpon>BlogList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BlogList.ascx.designer.cs">
+      <DependentUpon>BlogList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ListBoxDetail.ascx.cs">
+      <DependentUpon>ListBoxDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ListBoxDetail.ascx.designer.cs">
+      <DependentUpon>ListBoxDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ListBoxUC.ascx.cs">
+      <DependentUpon>ListBoxUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ListBoxUC.ascx.designer.cs">
+      <DependentUpon>ListBoxUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PropertyFloorplan.ascx.cs">
+      <DependentUpon>PropertyFloorplan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PropertyFloorplan.ascx.designer.cs">
+      <DependentUpon>PropertyFloorplan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PropertySlides.ascx.cs">
+      <DependentUpon>PropertySlides.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PropertySlides.ascx.designer.cs">
+      <DependentUpon>PropertySlides.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SlideshowDB.ascx.cs">
+      <DependentUpon>SlideshowDB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SlideshowDB.ascx.designer.cs">
+      <DependentUpon>SlideshowDB.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeLibrary\Config\Config.csproj">
+      <Project>{04EFEC06-E0A6-428D-80DD-68237E4E9E3E}</Project>
+      <Name>Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeLibrary\Logging\Logging.csproj">
+      <Project>{F310FC42-1916-47A3-B9A9-08CA8FA5DA5A}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeLibrary\Miscellaneous\Miscellaneous.csproj">
+      <Project>{3E175721-9EE3-49B3-88A0-D1AE001104C1}</Project>
+      <Name>Miscellaneous</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeLibrary\NET\NET.csproj">
+      <Project>{E094E920-3CB7-46C1-858C-00773918C302}</Project>
+      <Name>NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeLibrary\Parsing\Parsing.csproj">
+      <Project>{F3E5B425-61C6-4677-AA0D-11F16B405353}</Project>
+      <Name>Parsing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeLibrary\SCS-BOL\SCS-BOL.csproj">
+      <Project>{E6CE6217-A5D8-4872-BFD8-CE43287B2A5B}</Project>
+      <Name>SCS-BOL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlLibrary\GlobalControls\GlobalControlsCMS3.csproj">
+      <Project>{293b5714-81f8-469a-882c-a5ffcb03a267}</Project>
+      <Name>GlobalControlsCMS3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{0610B729-E77A-4067-B7DA-352FAD32D99E}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".htaccess" />
+    <None Include="inc\GoogleAnalytics.inc" />
+    <Content Include="css\homepage.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="App_Data\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PageNotFound.aspx" />
+    <Content Include="scr\homepage.js" />
+    <Content Include="scr\jquery.js" />
+    <Content Include="scr\main.js" />
+    <Content Include="sql\update.sql" />
+    <Content Include="masterpages\Standard.Master" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="gfx\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>16183</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
